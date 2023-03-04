@@ -12,8 +12,12 @@ const props = defineProps({
 </script>
 
 <template>
-  <RouterLink :to="`/character/${props.character._id}`" class ="rounded0lg b-white shadow-lg">
-    <img class="w-full rounded-t-lg object-cover" :src="props.character.imageUrl"/>
+  <RouterLink
+    :to="`/character/${props.character._id}`"
+    class ="rounded-lg b-white shadow-lg">
+    <img
+      class="w-full rounded-t-lg object-cover"
+      :src="props.character.imageUrl"/>
     <div class="p-4">
       <h2 class="text-2xl font-semibold text-gray-800">
         {{ props.character.name }}
