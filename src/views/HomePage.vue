@@ -16,11 +16,11 @@ onMounted(async () => {
 <template>
   <button
     title="Load Characters"
-    class="z-90 fixed bottom-8 right-8 flex h-20 w-20 items-center justify-center rounded-full bg-green-600 text-4xl text-white drop-shadow-lg duration-300 hover: scale-100 hover:bg-green-700 hover:drop-shadow-2xl"
+    class="z-90 fixed bottom-8 right-8 flex h-20 w-20 items-center justify-center rounded-full bg-purple-500 text-4xl text-white drop-shadow-lg duration-300 hover: scale-100 hover:bg-fuchsia-300 hover:drop-shadow-2xl"
     @click="fetchCharacters">
   🚀
   </button>
-  <main class="min-h-screen bg-gradient-to-tr from-fuchsia-900 to-red-700">
+  <main class="min-h-screen bg-gradient-to-br from-blue-900 to-teal-500">
     <div class="container mx-auto grid grid-cols-8 gap-4 pt-8">
       <BaseCard
         v-for="character in characters"
