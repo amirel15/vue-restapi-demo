@@ -14,7 +14,7 @@ const props = defineProps({
 <template>
   <RouterLink
     :to="`/character/${props.character._id}`"
-    class ="rounded-lg b-white shadow-lg">
+    class ="rounded-lg bg-white shadow-lg">
     <img
       class="w-full rounded-t-lg object-cover"
       :src="props.character.imageUrl"/>
